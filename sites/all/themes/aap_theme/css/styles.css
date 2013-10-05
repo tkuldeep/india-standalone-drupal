@@ -205,7 +205,7 @@
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/AAP_India\/sites\/all\/themes\/aap_theme\/sass\/_layout\.scss}line{font-family:\00003135}}
 .aap-main-content .view-content .views-row {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   padding-left: 25px;
   background: url(../images/bullet_img.png) no-repeat left 7px;
 }
