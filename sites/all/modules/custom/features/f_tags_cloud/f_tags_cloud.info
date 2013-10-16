@@ -1,0 +1,12 @@
+name = Tags Cloud
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = f_tags_cloud
+dependencies[] = ctools
+dependencies[] = page_manager
+dependencies[] = tagclouds
+features[ctools][] = page_manager:pages_default:1
+features[features_api][] = api:1
+features[page_manager_pages][] = tags_cloud
+project path = sites/all/modules/custom/features

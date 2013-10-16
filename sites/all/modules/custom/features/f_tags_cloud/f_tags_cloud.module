@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Tags Cloud feature.
+ */
+
+include_once 'f_tags_cloud.features.inc';
