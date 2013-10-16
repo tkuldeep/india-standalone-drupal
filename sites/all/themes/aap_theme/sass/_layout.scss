@@ -679,6 +679,23 @@
 			}
   }
   
+  .aap-tag-cloud {
+  	margin-left: 12%;
+    margin-right: 1%;
+    
+    .pane-content {
+    	border: 1px solid;
+    	border-radius: 0.3em;
+    	border-color: $border-color;
+    	text-align: left;
+    	background-color: white;
+    }
+    
+    .more-link {
+    	display: none;
+    }
+  }
+ 
  .aap-related-story {
  		margin-left: 12%;
  		margin-right: 0;
