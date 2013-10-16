@@ -680,17 +680,18 @@
   }
   
   .aap-tag-cloud {
-  	margin-left: 12%;
-    margin-right: 1%;
     
     .pane-content {
-    	border: 1px solid;
-    	border-radius: 0.3em;
-    	border-color: $border-color;
-    	text-align: left;
-    	background-color: white;
+      @include aap_content_item;
+    		
+    	.tagclouds-term {
+    	 margin: 0.3em;
+    	 a {
+    	 	font-family: $font-family-group;
+         	 text-decoration:none; font-weight:bold;
+    	 }	
+    	}
     }
-    
     .more-link {
     	display: none;
     }
