@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Json Feeds feature.
+ */
+
+include_once 'f_json_feeds.features.inc';
