@@ -1,0 +1,16 @@
+name = Json Feeds
+core = 7.x
+package = Other Site Functionality
+version = 7.x-1.0
+project = f_json_feeds
+dependencies[] = rest_server
+dependencies[] = services
+dependencies[] = services_views
+dependencies[] = views
+features[ctools][] = services:services:3
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[services_endpoint][] = mobile_services
+features[views_view][] = aap_content
+features_exclude[dependencies][ctools] = ctools
+project path = sites/all/modules/custom/features
