@@ -287,6 +287,15 @@
   text-shadow: none;
 }
 
+.sticky-header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.sticky-header .inside {
+  width: 100%;
+}
+
 .header-menu
 .sf-menu.sf-style-default li {
   background: url(../images/main_menu_border.png) no-repeat right;

@@ -255,6 +255,16 @@
     }
   }  
  
+ .sticky-header {
+   position: fixed;
+   top: 0;
+   z-index: 999;
+   
+   .inside {
+    width:100%;
+   }
+ }
+ 
  .header-menu
  .sf-menu.sf-style-default {
  
