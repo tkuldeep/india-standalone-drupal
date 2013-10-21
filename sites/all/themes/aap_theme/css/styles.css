@@ -68,11 +68,19 @@
 
 .top-header-row {
   padding: 0;
-  margin-top: 0.1%;
+  width: 1000px !important;
+  left: 0px;
+  padding-left: 8em;
+  padding-right: 10em;
+  box-shadow: 0 -16px 33px #CCCCCC inset;
+  margin-left: 0em;
+  z-index: 999;
+  background: white;
+  position: fixed;
+  top: 0;
 }
 
 .main-menu-row {
-  box-shadow: 0 -16px 33px #CCCCCC;
   height: 57px;
 }
 
@@ -115,6 +123,7 @@
 
 .aap-body-class {
   margin: 0;
+  margin-top: 50px;
 }
 
 .aap-search-class #aap-contact {
@@ -285,13 +294,6 @@
   border-radius: 0.4em;
   margin-left: 2em;
   text-shadow: none;
-}
-
-.sticky-header {
-  position: fixed;
-  top: 0;
-  z-index: 999;
-  max-height: 100px;
 }
 
 .header-menu
@@ -1249,6 +1251,8 @@ form .form-submit:hover {
   background: #F28300;
   padding: 0.3em 1em;
   float: right;
+  margin-right: 1.78em;
+  margin-top: 0.5em;
   -webkit-border-radius: 0.3em;
   -moz-border-radius: 0.3em;
   -ms-border-radius: 0.3em;
