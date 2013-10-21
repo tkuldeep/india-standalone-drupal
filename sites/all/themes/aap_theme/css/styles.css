@@ -291,9 +291,7 @@
   position: fixed;
   top: 0;
   z-index: 999;
-}
-.sticky-header .inside {
-  width: 100%;
+  max-height: 100px;
 }
 
 .header-menu
@@ -1244,6 +1242,27 @@ form .form-submit:hover {
 .aap-main-content .read-more:hover,
 .aap-main-content .more-link:hover,
 .aap-main-content .donate-link:hover {
+  background: #fcac33;
+}
+
+.header-donate-link {
+  background: #F28300;
+  padding: 0.3em 1em;
+  float: right;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em;
+}
+.header-donate-link a {
+  color: #fffcf9;
+  font-family: Franklin Gothic Demi Cond;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-shadow: 1px 1px 1b1c28;
+}
+.header-donate-link:hover {
   background: #fcac33;
 }
 

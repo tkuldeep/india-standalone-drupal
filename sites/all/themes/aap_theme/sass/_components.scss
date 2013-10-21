@@ -142,6 +142,20 @@ form .form-submit {
  			
  }
  
+ .header-donate-link {
+  background:  #F28300;
+ 	padding: 0.3em 1em;
+ 	float: right;
+ 	@include border-radius(0.3em);
+ 	a {
+		@include aap_font_style ;
+		text-shadow:1px 1px 1b1c28;
+	}
+	&:hover {
+    background:  $button-color-hover;
+  }
+ }
+ 
 input[type="text"] {
     width: 100%;
     border: 1px solid $border-color;
