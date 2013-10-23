@@ -796,6 +796,11 @@
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-weight: bold;
+  opacity: 1;
+}
+.aap-tag-cloud .pane-content .tagclouds-term a:hover {
+  color: red;
+  opacity: 0.7;
 }
 .aap-tag-cloud .more-link {
   display: none;
