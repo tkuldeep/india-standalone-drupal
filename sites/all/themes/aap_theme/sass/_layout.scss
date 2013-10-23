@@ -136,12 +136,18 @@
       margin-bottom: 2px;
       padding-left: 25px;
       background: url(../images/bullet_img.png) no-repeat left 7px;
+      
     }
     
      
    	a {
       @include aap_font_body;
       color:#1f7fa2;
+      opacity: 1;
+      &:hover {
+        color: #150CF0;
+      	opacity: 0.8;
+      }
     }
     
 }
@@ -334,6 +340,7 @@
       			ul {
       					padding:0;
       					margin-right: 7%;
+      					margin-top: 0;
       			}
               .right-nav_1-class {
                    background: url('../images/action_call.gif') no-repeat scroll 0% 0% $nav_blue;
