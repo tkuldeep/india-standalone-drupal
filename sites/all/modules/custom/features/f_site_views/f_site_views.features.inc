@@ -121,7 +121,7 @@ function f_site_views_image_default_styles() {
         'module' => 'image',
         'name' => 'image_resize',
         'data' => array(
-          'width' => '670',
+          'width' => '740',
           'height' => '270',
         ),
         'weight' => '1',

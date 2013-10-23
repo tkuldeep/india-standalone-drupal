@@ -69,13 +69,25 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane = new stdClass();
     $pane->pid = 'new-1';
     $pane->panel = 'footer_1';
-    $pane->type = 'block';
-    $pane->subtype = 'advpoll-advpoll_recent';
+    $pane->type = 'views';
+    $pane->subtype = 'landing_pages';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'override_pager_settings' => 0,
+      'use_pager' => 0,
+      'nodes_per_page' => '5',
+      'pager_id' => '0',
+      'offset' => '0',
+      'more_link' => 0,
+      'feed_icons' => 0,
+      'panel_args' => 0,
+      'link_to_view' => 0,
+      'args' => '',
+      'url' => '',
+      'display' => 'block_4',
       'override_title' => 1,
-      'override_title_text' => 'Poll',
+      'override_title_text' => 'Your Story',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -83,7 +95,7 @@ function f_theme_layout_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'aap-main-content aap-poll-class',
+      'css_class' => 'aap-main-content aap-story-class',
     );
     $pane->extras = array();
     $pane->position = 0;
@@ -136,7 +148,7 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<div class="aap-call-us-class"><div class="title">Still have questions about AAP?</div><div class="content">CALL US:&nbsp;<span style="line-height: 0.1em; font-size:31px;">9718500606&nbsp;</span><span>OR <a href="mailto:contact@aamaadmiparty.org ?Subject=Hello%20again" target="_top"> E-MAIL US</a></span></div></div>',
+      'body' => '<div class="aap-call-us-class"><div class="title">Still have questions about AAP?</div><div class="content">CALL US:&nbsp;<span style="line-height: 0.1em; font-size:31px;">9718500606&nbsp;</span><span>OR <a href="mailto:contact@aamaadmiparty.org ?Subject=Hello%20again" target="_top"> E-MAIL US</a>&nbsp;fdgfdg</span></div></div>',
       'format' => 'full_html',
       'substitute' => 1,
     );
@@ -242,6 +254,30 @@ function f_theme_layout_default_page_manager_handlers() {
     $display->panels['header_menu'][0] = 'new-7';
     $pane = new stdClass();
     $pane->pid = 'new-8';
+    $pane->panel = 'header_menu';
+    $pane->type = 'block';
+    $pane->subtype = 'block-3';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'aap-countdown-class',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-8'] = $pane;
+    $display->panels['header_menu'][1] = 'new-8';
+    $pane = new stdClass();
+    $pane->pid = 'new-9';
     $pane->panel = 'left_content';
     $pane->type = 'views';
     $pane->subtype = 'landing_pages';
@@ -274,35 +310,11 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-8'] = $pane;
-    $display->panels['left_content'][0] = 'new-8';
-    $pane = new stdClass();
-    $pane->pid = 'new-9';
-    $pane->panel = 'middle_content';
-    $pane->type = 'block';
-    $pane->subtype = 'aap_tweaks-Donation_ Block';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array(
-      'css_id' => '',
-      'css_class' => 'aap-main-content aap-donation-class',
-    );
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
     $display->content['new-9'] = $pane;
-    $display->panels['middle_content'][0] = 'new-9';
+    $display->panels['left_content'][0] = 'new-9';
     $pane = new stdClass();
     $pane->pid = 'new-10';
-    $pane->panel = 'middle_left_content';
+    $pane->panel = 'middle_content';
     $pane->type = 'block';
     $pane->subtype = 'block-2';
     $pane->shown = TRUE;
@@ -323,9 +335,33 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->position = 0;
     $pane->locks = array();
     $display->content['new-10'] = $pane;
-    $display->panels['middle_left_content'][0] = 'new-10';
+    $display->panels['middle_content'][0] = 'new-10';
     $pane = new stdClass();
     $pane->pid = 'new-11';
+    $pane->panel = 'middle_left_content';
+    $pane->type = 'block';
+    $pane->subtype = 'aap_tweaks-Donation_ Block';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'aap-main-content aap-donation-class',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-11'] = $pane;
+    $display->panels['middle_left_content'][0] = 'new-11';
+    $pane = new stdClass();
+    $pane->pid = 'new-12';
     $pane->panel = 'right_content';
     $pane->type = 'block';
     $pane->subtype = 'block-1';
@@ -346,10 +382,10 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-11'] = $pane;
-    $display->panels['right_content'][0] = 'new-11';
+    $display->content['new-12'] = $pane;
+    $display->panels['right_content'][0] = 'new-12';
     $pane = new stdClass();
-    $pane->pid = 'new-12';
+    $pane->pid = 'new-13';
     $pane->panel = 'right_middle_content';
     $pane->type = 'views';
     $pane->subtype = 'landing_pages';
@@ -367,9 +403,12 @@ function f_theme_layout_default_page_manager_handlers() {
       'link_to_view' => 0,
       'args' => '',
       'url' => '',
-      'display' => 'block_4',
-      'override_title' => 1,
-      'override_title_text' => 'Your Story',
+      'display' => 'block_1',
+      'context' => array(
+        0 => '',
+      ),
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -377,15 +416,15 @@ function f_theme_layout_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'aap-main-content aap-story-class',
+      'css_class' => 'aap-main-content latest-news-class',
     );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-12'] = $pane;
-    $display->panels['right_middle_content'][0] = 'new-12';
+    $display->content['new-13'] = $pane;
+    $display->panels['right_middle_content'][0] = 'new-13';
     $pane = new stdClass();
-    $pane->pid = 'new-13';
+    $pane->pid = 'new-14';
     $pane->panel = 'right_navigation';
     $pane->type = 'block';
     $pane->subtype = 'menu-menu-right-navigation';
@@ -406,14 +445,14 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-13'] = $pane;
-    $display->panels['right_navigation'][0] = 'new-13';
+    $display->content['new-14'] = $pane;
+    $display->panels['right_navigation'][0] = 'new-14';
     $pane = new stdClass();
-    $pane->pid = 'new-14';
+    $pane->pid = 'new-15';
     $pane->panel = 'sliding_region';
     $pane->type = 'page_messages';
     $pane->subtype = 'page_messages';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array();
     $pane->cache = array();
@@ -424,10 +463,10 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-14'] = $pane;
-    $display->panels['sliding_region'][0] = 'new-14';
+    $display->content['new-15'] = $pane;
+    $display->panels['sliding_region'][0] = 'new-15';
     $pane = new stdClass();
-    $pane->pid = 'new-15';
+    $pane->pid = 'new-16';
     $pane->panel = 'sliding_region';
     $pane->type = 'views';
     $pane->subtype = 'home_page_content';
@@ -460,8 +499,8 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-15'] = $pane;
-    $display->panels['sliding_region'][1] = 'new-15';
+    $display->content['new-16'] = $pane;
+    $display->panels['sliding_region'][1] = 'new-16';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -623,7 +662,7 @@ function f_theme_layout_default_page_manager_handlers() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-16';
+    $pane->pid = 'new-17';
     $pane->panel = 'bottom_content';
     $pane->type = 'panels_mini';
     $pane->subtype = 'footer';
@@ -644,10 +683,10 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-16'] = $pane;
-    $display->panels['bottom_content'][0] = 'new-16';
+    $display->content['new-17'] = $pane;
+    $display->panels['bottom_content'][0] = 'new-17';
     $pane = new stdClass();
-    $pane->pid = 'new-17';
+    $pane->pid = 'new-18';
     $pane->panel = 'center';
     $pane->type = 'panels_mini';
     $pane->subtype = 'header';
@@ -668,10 +707,10 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-17'] = $pane;
-    $display->panels['center'][0] = 'new-17';
+    $display->content['new-18'] = $pane;
+    $display->panels['center'][0] = 'new-18';
     $pane = new stdClass();
-    $pane->pid = 'new-18';
+    $pane->pid = 'new-19';
     $pane->panel = 'footer_top_content';
     $pane->type = 'panels_mini';
     $pane->subtype = 'footer_bottom';
@@ -692,26 +731,8 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-18'] = $pane;
-    $display->panels['footer_top_content'][0] = 'new-18';
-    $pane = new stdClass();
-    $pane->pid = 'new-19';
-    $pane->panel = 'page_content';
-    $pane->type = 'page_messages';
-    $pane->subtype = 'page_messages';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array();
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
     $display->content['new-19'] = $pane;
-    $display->panels['page_content'][0] = 'new-19';
+    $display->panels['footer_top_content'][0] = 'new-19';
     $pane = new stdClass();
     $pane->pid = 'new-20';
     $pane->panel = 'page_content';
@@ -729,12 +750,30 @@ function f_theme_layout_default_page_manager_handlers() {
       'css_class' => 'aap-breadcrumb',
     );
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $display->content['new-20'] = $pane;
-    $display->panels['page_content'][1] = 'new-20';
+    $display->panels['page_content'][0] = 'new-20';
     $pane = new stdClass();
     $pane->pid = 'new-21';
+    $pane->panel = 'page_content';
+    $pane->type = 'pane_messages';
+    $pane->subtype = 'pane_messages';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-21'] = $pane;
+    $display->panels['page_content'][1] = 'new-21';
+    $pane = new stdClass();
+    $pane->pid = 'new-22';
     $pane->panel = 'page_content';
     $pane->type = 'page_content';
     $pane->subtype = 'page_content';
@@ -756,10 +795,10 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-21'] = $pane;
-    $display->panels['page_content'][2] = 'new-21';
+    $display->content['new-22'] = $pane;
+    $display->panels['page_content'][2] = 'new-22';
     $pane = new stdClass();
-    $pane->pid = 'new-22';
+    $pane->pid = 'new-23';
     $pane->panel = 'right_navigation';
     $pane->type = 'panels_mini';
     $pane->subtype = 'right_navigation';
@@ -780,10 +819,10 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-22'] = $pane;
-    $display->panels['right_navigation'][0] = 'new-22';
+    $display->content['new-23'] = $pane;
+    $display->panels['right_navigation'][0] = 'new-23';
     $pane = new stdClass();
-    $pane->pid = 'new-23';
+    $pane->pid = 'new-24';
     $pane->panel = 'right_navigation';
     $pane->type = 'block';
     $pane->subtype = 'aap_tweaks-Donation_ Block';
@@ -804,10 +843,10 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-23'] = $pane;
-    $display->panels['right_navigation'][1] = 'new-23';
+    $display->content['new-24'] = $pane;
+    $display->panels['right_navigation'][1] = 'new-24';
     $pane = new stdClass();
-    $pane->pid = 'new-24';
+    $pane->pid = 'new-25';
     $pane->panel = 'right_navigation';
     $pane->type = 'views';
     $pane->subtype = 'similar_content';
@@ -845,10 +884,34 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = array();
-    $display->content['new-24'] = $pane;
-    $display->panels['right_navigation'][2] = 'new-24';
+    $display->content['new-25'] = $pane;
+    $display->panels['right_navigation'][2] = 'new-25';
     $pane = new stdClass();
-    $pane->pid = 'new-25';
+    $pane->pid = 'new-26';
+    $pane->panel = 'right_navigation';
+    $pane->type = 'block';
+    $pane->subtype = 'cumulus-1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Tag Clouds',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'aap-main-content aap-tag-cloud',
+    );
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $display->content['new-26'] = $pane;
+    $display->panels['right_navigation'][3] = 'new-26';
+    $pane = new stdClass();
+    $pane->pid = 'new-27';
     $pane->panel = 'top_menu';
     $pane->type = 'panels_mini';
     $pane->subtype = 'header_menu';
@@ -866,8 +929,29 @@ function f_theme_layout_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-25'] = $pane;
-    $display->panels['top_menu'][0] = 'new-25';
+    $display->content['new-27'] = $pane;
+    $display->panels['top_menu'][0] = 'new-27';
+    $pane = new stdClass();
+    $pane->pid = 'new-28';
+    $pane->panel = 'top_menu';
+    $pane->type = 'block';
+    $pane->subtype = 'block-3';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-28'] = $pane;
+    $display->panels['top_menu'][1] = 'new-28';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
