@@ -25,13 +25,22 @@
 }
 
 .top-header-row {
-	padding:0;
-	margin-top: 0.1%;
+	padding: 0;
+  width: 1000px !important;
+  left: 0px;
+  padding-left: 8em;
+  padding-right: 10em;
+  box-shadow: 0 -16px 33px #CCCCCC inset;
+  margin-left: 0em;
+  z-index: 999;
+  background: white;
+  position: fixed;
+  top: 0;
 }
 .aap-header-search-class > .inside {
 }
 .main-menu-row {
-	box-shadow: 0 -16px 33px #CCCCCC;
+	//box-shadow: 0 -16px 33px #CCCCCC;
 	height: 57px;
 }
 .main-menu-row > .inside,
@@ -72,6 +81,7 @@
 
 .aap-body-class {
   margin : 0;
+  margin-top: 50px;
 }
 
 .aap-search-class {

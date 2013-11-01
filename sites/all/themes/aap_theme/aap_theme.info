@@ -23,6 +23,4 @@ features[] = logo
 
 scripts[] = js/json2.js
 scripts[] = js/jquery.cookie.js
-scripts[] = js/slide_survey.js
 scripts[] = js/aap_campaign_tracker.js
-
