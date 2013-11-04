@@ -26,7 +26,6 @@ dependencies[] = panels_mini
 dependencies[] = path
 dependencies[] = pathauto
 dependencies[] = poll
-dependencies[] = profile2
 dependencies[] = snippet
 dependencies[] = system
 dependencies[] = taxonomy

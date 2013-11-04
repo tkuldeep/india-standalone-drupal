@@ -7,7 +7,6 @@ version = 7.x-1.0
 project = f_issue_based_groups
 dependencies[] = ctools
 dependencies[] = entityreference
-dependencies[] = f_moderation_and_publication
 dependencies[] = image
 dependencies[] = node
 dependencies[] = og

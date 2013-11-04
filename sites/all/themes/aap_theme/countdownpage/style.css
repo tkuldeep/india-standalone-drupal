@@ -1,0 +1,60 @@
+/*****CSS RESET*****/
+html, body, div, span, applet, object, iframe, 
+p, blockquote, pre, a, s, strong,b,i
+abbr, acronym, address, big, cite, code, del, dfn,  font,
+img, ins, kbd, q,samp, small, strike, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td,h1, h2, h3, h4, h5, h6,em {
+background-position:0 0;
+background-repeat:no-repeat;
+border:0 none;
+font-size:100%;
+font-style:inherit;
+font-weight:inherit;
+margin:0;
+padding:0;
+text-align:left;
+vertical-align:baseline;
+}
+a img, :link img, :visited img {
+border:0 none;
+}
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+ol, ul {
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+content:"";
+}
+
+/******************************************************************************/
+/*****COMMON STYLES*****/
+	html, body {
+		height:100%;
+	}
+	body {
+		font-family: Tahoma;
+		font-size: 12px;
+		color: #000000;
+		width:100%;
+		min-width:1000px;
+		background: url(/sites/all/themes/aap_theme/countdownpage/bg.jpg);
+	}
+
+/*****MAIN*****/
+
+	#wrap {
+		position: relative;
+		width:1000px;
+		margin: 0px auto;
+		padding:200px 0 0 0;
+	}
+	.callback{
+		text-align: center;
+		padding: 20px 0 0 0;
+	}

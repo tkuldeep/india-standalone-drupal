@@ -1,0 +1,80 @@
+#wrap {
+		position: relative;
+		margin: 0px auto;
+		padding:5px 0 0 0;
+		background: url(/sites/all/themes/aap_theme/countdownpage/bg.jpg);
+	}
+.callback{
+		text-align: center;
+		padding: 20px 0 0 0;
+	}
+	
+.countdownHolder{
+	width: 593px;
+	height: 150px;
+	position: relative;
+	margin: 0 auto;
+	background: url(/sites/all/themes/aap_theme/countdownpage/timer.png) no-repeat;
+	padding: 34px;
+	color: white;
+}
+
+.countdownHolder .position{
+	display: block;
+	float: left;
+	width: 74px;
+	height: 136px;
+	overflow: hidden;
+	position: relative;
+	
+}
+
+.countdownHolder .digit{
+	position:absolute;
+	display:block;
+	width: 223px;
+	height: 8976px;
+	background: url(/sites/all/themes/aap_theme/countdownpage/frame.png) no-repeat 0 0;
+	z-index: 1;
+}
+.countdownHolder>span{
+	width: 148px;
+	height: 136px;
+	float: left;
+}
+.countdownHolder .position .countWord{
+	width:592px;
+	height: 544px;
+	background: url(/sites/all/themes/aap_theme/countdownpage/words.png) no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.countdownHolder .cd-icons{
+	position: absolute;
+	bottom: 9px;
+	right: 39px;
+	height: 30px;
+	font-size: 0;
+}
+.countdownHolder .cd-icons a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-left: 7px;
+	height: 30px;
+}
+.countdownHolder .cd-icons a.cd-info{
+	background: url(/sites/all/themes/aap_theme/countdownpage/info.png) no-repeat;
+}
+.countdownHolder .cd-icons a.cd-mail{
+	background: url(/sites/all/themes/aap_theme/countdownpage/mail.png) no-repeat;
+}
+.countdownHolder .cd-icons a.cd-twitter{
+	background: url(/sites/all/themes/aap_theme/countdownpage/twitter.png) no-repeat;
+}
+.countdownHolder .cd-icons a.cd-facebook{
+	background: url(/sites/all/themes/aap_theme/countdownpage/facebook.png) no-repeat;
+}
