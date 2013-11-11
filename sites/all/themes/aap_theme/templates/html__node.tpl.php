@@ -12,11 +12,11 @@ define('DA_URI', 'http://detect.deviceatlas.com/query?User-Agent=%s');
 $redirect = isset($_REQUEST['redirect'])?$_REQUEST['redirect']:null;
 
 if($redirect!='false') {
+
   $da_results = array('_source' => 'none');
 
   $prevent_redirect = false;
   if (DA_USE_COOKIES && isset($_COOKIE['Mobi_Mtld_DA_Prevent_Redirect'])) {
-
       //Clear the redirect-prevention cookie if we see redirect=true parameter
       if($redirect == 'true') {
             setcookie('Mobi_Mtld_DA_Prevent_Redirect', 'false', time()-3600);
@@ -30,8 +30,10 @@ if($redirect!='false') {
   }
 
   if (DA_USE_COOKIES && isset($_COOKIE['Mobi_Mtld_DA_Properties'])) {
+
       $da_results = (array)json_decode($_COOKIE['Mobi_Mtld_DA_Properties'], true);
       $da_results['_source'] = 'cookie';
+
   }
 
   if (DA_USE_CACHE && $da_results['_source'] === 'none') {
