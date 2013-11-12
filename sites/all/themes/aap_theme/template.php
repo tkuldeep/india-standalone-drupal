@@ -60,16 +60,4 @@ function aap_theme_preprocess_html(&$vars) {
   //Add header for redirecting site mobile view, when opened in mobile
   drupal_add_html_head($handheld, 'handheld');
   }
-
-  if (module_exists('path')) {
-    $alias = drupal_get_path_alias(str_replace('/edit','',$_GET['q']));
-    if ($alias == $_GET['q']) {
-      $template_filename = 'html';
-
-      foreach (explode('/', $alias) as $path_part) {
-        $template_filename = $template_filename . '__' . $path_part;
-        $vars['theme_hook_suggestions'][] = $template_filename;
-      }
-    }
-  }
 }

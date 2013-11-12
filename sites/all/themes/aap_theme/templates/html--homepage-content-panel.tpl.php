@@ -10,7 +10,6 @@ define('DA_CACHE_DIR', sys_get_temp_dir() . DIRECTORY_SEPARATOR . 'DeviceAtlasCa
 define('DA_URI', 'http://detect.deviceatlas.com/query?User-Agent=%s');
 
 $redirect = isset($_REQUEST['redirect'])?$_REQUEST['redirect']:null;
-dpm('tk');
 if($redirect!='false') {
 
   $da_results = array('_source' => 'none');
