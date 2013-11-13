@@ -28,10 +28,14 @@ if (mobile_url != null && desktop_url != null && !no_redirect) {
   var mobile_url_parts = mobile_url.replace('http://', '').replace('https://', '').split(/[/:?#]/);
   var desktop_url_parts = desktop_url.replace('http://', '').replace('https://', '').split(/[/:?#]/);
 
-  if (mobile && window.location.hostname == desktop_url_parts[0]) {
+  // Only for home page
+  var window_href = window.location.href.replace('http://', '').replace('https://', '');
+  window_href = window_href.substring(0, window_href.length -1);
+  if (mobile && window.location.hostname == desktop_url_parts[0] && window_href == desktop_url_parts[0]) {
     // The device is mobile but the URL is desktop, so redirect.
     document.location = mobile_url;
   } else if (!mobile && window.location.hostname == mobile_url_parts[0]) {
+
     // The device is desktop but the URL is mobile, so redirect.
     document.location = desktop_url;
   }
